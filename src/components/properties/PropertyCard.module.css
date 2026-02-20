@@ -1,0 +1,8 @@
+.propertyCard { background: #fff; border-radius: 18px; overflow: hidden; color: #11273a; box-shadow: 0 8px 28px rgba(0,0,0,.12); }
+.imageContainer { position: relative; height: 260px; }
+.image { object-fit: cover; }
+.priceBadge { position: absolute; right: 14px; top: 14px; background: linear-gradient(135deg, #d4a574, #c7965f); color: #fff; border-radius: 999px; padding: 8px 14px; font-weight: 700; }
+.content { padding: 18px; }
+.title { margin: 0 0 6px; }
+.location { margin: 0 0 12px; color: #3d5a72; }
+.features { display: flex; gap: 10px; flex-wrap: wrap; color: #17334b; font-size: .92rem; }

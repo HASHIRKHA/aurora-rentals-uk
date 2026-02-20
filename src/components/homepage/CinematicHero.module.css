@@ -1,0 +1,21 @@
+.heroContainer {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a1f2e 0%, #15374a 45%, #0b2435 100%);
+}
+.heroBackground { position: absolute; inset: 0; background: radial-gradient(circle at 80% 20%, rgba(0,160,128,.22), transparent 40%), radial-gradient(circle at 20% 80%, rgba(212,165,116,.24), transparent 45%); }
+.gradientOverlay { position:absolute; inset:0; background: linear-gradient(180deg, rgba(10,31,46,.35) 0%, rgba(10,31,46,.85) 100%); }
+.heroContent { position: relative; z-index: 2; text-align:center; max-width: 980px; padding: 0 24px; }
+.kicker { letter-spacing: .18em; text-transform: uppercase; color: #8fdacb; font-size: .8rem; }
+.mainHeadline { font-size: clamp(2.2rem, 8vw, 5rem); line-height: 1.05; margin: 0; font-weight: 800; }
+.word { display:inline-block; margin: 0 .35rem; background: linear-gradient(180deg,#fff,#d4a574); -webkit-background-clip:text; -webkit-text-fill-color: transparent; }
+.subHeadline { color: rgba(230,240,255,.88); font-size: 1.15rem; max-width: 700px; margin: 22px auto 30px; }
+.ctaContainer { display:flex; gap:14px; justify-content:center; flex-wrap: wrap; }
+.ctaPrimary, .ctaSecondary { border-radius: 999px; padding: 14px 30px; font-weight: 700; border: 1px solid transparent; }
+.ctaPrimary { background: linear-gradient(135deg, #00a080, #0bc59f); color: #fff; }
+.ctaSecondary { background: transparent; border-color: rgba(212,165,116,.7); color: #e6cba9; }
+@media (max-width: 768px) { .ctaContainer { flex-direction: column; } .ctaPrimary, .ctaSecondary { width: 100%; } }

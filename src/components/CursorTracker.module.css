@@ -1,0 +1,34 @@
+.cursor {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(0, 61, 122, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  mix-blend-mode: lighten;
+}
+.visible { opacity: 1; }
+.default { background: radial-gradient(circle at 30% 30%, rgba(0, 160, 128, 0.35), transparent); }
+.pointer { border-color: rgba(212,165,116,1); background: radial-gradient(circle at 30% 30%, rgba(212,165,116,0.5), transparent); transform-origin: center; }
+.grab { border-style: dashed; }
+.text { width: 2px; height: 20px; border: none; background: rgba(255,255,255,0.85); }
+.cursorRing {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(0, 160, 128, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+@media (pointer: fine) {
+  :global(html), :global(body), :global(button), :global(a), :global(input), :global(textarea) { cursor: none !important; }
+}
